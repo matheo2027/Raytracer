@@ -36,6 +36,6 @@ cmake --build build
 
 ***
 
-<!-- ![Screenshot](JAM_OPEN_DATA.png) -->
+![Screenshot](scenes/Exemple1.png)
 
 group members: matheo.piques@epitech.eu babacar.sow@epitech.eu mathieu.mayard@epitech.eu tom.freida@epitech.eu
