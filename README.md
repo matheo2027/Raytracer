@@ -27,7 +27,7 @@ A little intro about the installation.
 
 ```bash
 git clone git@github.com:EpitechPromo2027/B-OOP-400-BDX-4-1-raytracer-matheo.piques.git
-cd ./raytracer
+cd ./B-OOP-400-BDX-4-1-raytracer-matheo.piques
 cmake -S . -B build
 cmake --build build
 ```
