@@ -9,9 +9,9 @@
 #define RENDERER_HPP
 
 #include <vector>
-#include "Sphere.hpp"
-#include "Plane.hpp"
-#include "Translation.hpp"
+#include "../primitives/sphere/Sphere.hpp"
+#include "../primitives/plane/Plane.hpp"
+#include "../transformation/translation/Translation.hpp"
 
 class Renderer {
 private:

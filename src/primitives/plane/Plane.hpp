@@ -8,7 +8,7 @@
 #ifndef PLANE_HPP
 #define PLANE_HPP
 
-#include "Flat_Color.hpp"
+#include "../../materials/flat_color/Flat_Color.hpp"
 
 class Plane {
 private:

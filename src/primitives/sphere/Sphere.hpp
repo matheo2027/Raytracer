@@ -8,7 +8,7 @@
 #ifndef SPHERE_HPP
 #define SPHERE_HPP
 
-#include "Flat_Color.hpp"
+#include "../../materials/flat_color/Flat_Color.hpp"
 
 class Sphere {
 private:
