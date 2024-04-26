@@ -37,43 +37,7 @@ add_executable(raytracer src/main.cpp)
 # Link libraries
 target_link_libraries(raytracer Ambiant_Light Directional_Light Flat_Color Plane Sphere Renderer Translation)
 
-# PREFIX
-
-# Move .so files to the plugins directory
-# set(PLUGINS_DESTINATION ${CMAKE_SOURCE_DIR}/plugins)
-#
-# add_custom_command(
-    # TARGET Ambiant_Light
-    # POST_BUILD
-    # COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Ambiant_Light> ${PLUGINS_DESTINATION})
-#
-# add_custom_command(
-    # TARGET Directional_Light
-    # POST_BUILD
-    # COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Directional_Light> ${PLUGINS_DESTINATION})
-#
-# add_custom_command(
-    # TARGET Flat_Color
-    # POST_BUILD
-    # COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Flat_Color> ${PLUGINS_DESTINATION})
-#
-# add_custom_command(
-    # TARGET Plane
-    # POST_BUILD
-    # COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Plane> ${PLUGINS_DESTINATION})
-#
-# add_custom_command(
-    # TARGET Sphere
-    # POST_BUILD
-    # COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Sphere> ${PLUGINS_DESTINATION})
-#
-# add_custom_command(
-    # TARGET Renderer
-    # POST_BUILD
-    # COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Renderer> ${PLUGINS_DESTINATION})
-#
-# add_custom_command(
-    # TARGET Translation
-    # POST_BUILD
-    # COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Translation> ${PLUGINS_DESTINATION})
-#
+# Set the output directory for the executable to the root of the project
+set_target_properties(raytracer PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}
+)
