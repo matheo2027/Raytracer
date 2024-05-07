@@ -18,9 +18,9 @@ void help(void)
   std::cout << "\t scene configuration" << std::endl;
 }
 
-int main(int ac, char **av)
+int main(int argc, char **argv)
 {
-  if (ac != 2 || strcmp(av[1], "--help") == 0) {
+  if (argc != 2 || strcmp(argv[1], "--help") == 0) {
     help();
     return KO;
   }
