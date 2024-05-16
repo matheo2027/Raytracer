@@ -7,6 +7,7 @@
 
 #ifndef RECTANGLE3D_HPP_
 #define RECTANGLE3D_HPP_
+
 #include "Point3D.hpp"
 #include "Vector3D.hpp"
 

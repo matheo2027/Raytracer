@@ -8,9 +8,6 @@
 #ifndef CAMERA_HPP_
 #define CAMERA_HPP_
 
-#ifndef CAMERA_H
-#define CAMERA_H
-
 #include "Point3D.hpp"
 #include "Rectangle3D.hpp"
 #include "Ray.hpp"
@@ -40,9 +37,5 @@ namespace RayTracer {
     };
 
 } // namespace RayTracer
-
-#endif // CAMERA_H
-
-
 
 #endif /* !CAMERA_HPP_ */

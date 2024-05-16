@@ -33,5 +33,4 @@ namespace RayTracer {
         return RayTracer::Ray(origin, pointOnScreen - origin);
     }
 
-} // namespace RayTracer
-
+}
