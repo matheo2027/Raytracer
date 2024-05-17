@@ -8,7 +8,7 @@
 #ifndef RAY_HPP_
 #define RAY_HPP_
 
-#include "./Vector3D.hpp"
+#include "Vector3D.hpp"
 
 class Ray {
 public:

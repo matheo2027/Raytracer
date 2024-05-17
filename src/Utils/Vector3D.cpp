@@ -5,7 +5,7 @@
 ** Vector3D
 */
 
-#include "./Vector3D.hpp"
+#include "Vector3D.hpp"
 
 Vector3D::Vector3D() : e{0, 0, 0} {}
 

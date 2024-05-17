@@ -13,8 +13,8 @@
 #include <limits>
 #include <memory>
 #include "../materials/flat_color/Flat_Color.hpp"
-#include "./Ray.hpp"
-#include "./Vector3D.hpp"
+#include "Ray.hpp"
+#include "Vector3D.hpp"
 
 using std::make_shared;
 using std::shared_ptr;

@@ -5,7 +5,7 @@
 ** Hittable_list
 */
 
-#include "./Hittable_list.hpp"
+#include "Hittable_list.hpp"
 
 HittableList::HittableList() {}
 

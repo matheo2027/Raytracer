@@ -5,7 +5,7 @@
 ** Ray
 */
 
-#include "./Ray.hpp"
+#include "Ray.hpp"
 
 Ray::Ray() {}
 

@@ -5,7 +5,7 @@
 ** Flat_Color
 */
 
-#include "./Flat_Color.hpp"
+#include "Flat_Color.hpp"
 
 void Flat_color(std::ostream& out, const Flat_Color& pixel_color) {
     auto r = pixel_color.x();

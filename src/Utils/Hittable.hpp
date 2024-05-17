@@ -9,8 +9,8 @@
 #define HITTABLE_HPP_
 
 #include <memory>
-#include "./Ray.hpp"
-#include "./Vector3D.hpp"
+#include "Ray.hpp"
+#include "Vector3D.hpp"
 
 class Material;
 
