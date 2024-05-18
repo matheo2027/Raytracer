@@ -18,5 +18,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <string.h>
+#include <cstring>
+#include <fstream>
 
 #endif /* !MACROS_HPP_ */

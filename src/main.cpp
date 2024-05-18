@@ -82,4 +82,22 @@ int main(int argc, char **argv)
         }
         return OK;
     }
+
+    const char *filename = argv[1];
+    const char *extension = std::strrchr(filename, '.');
+
+    if (!extension || std::strcmp(extension, ".cfg") != 0) {
+        std::cerr << "Error: File must have a .cfg extension." << std::endl;
+        return KO;
+    }
+
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Error: Unable to open the file." << std::endl;
+        return KO;
+    }
+
+    std::cout << "File opened successfully." << std::endl;
+    file.close();
+    return OK;
 }
