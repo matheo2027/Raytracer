@@ -8,7 +8,7 @@
 #ifndef HITTABLE_HPP_
 #define HITTABLE_HPP_
 
-#include <memory>
+#include "../../include/Macros.hpp"
 #include "Ray.hpp"
 #include "Vector3D.hpp"
 

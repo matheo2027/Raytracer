@@ -5,8 +5,8 @@
 ** Ambiant_light
 */
 
-#ifndef AMBIANT_LIGHT_HPP
-#define AMBIANT_LIGHT_HPP
+#ifndef AMBIANT_LIGHT_HPP_
+#define AMBIANT_LIGHT_HPP_
 
 class Ambient_Light {
 private:
@@ -21,4 +21,4 @@ public:
     void setIntensity(float intensity); // Setter for intensity
 };
 
-#endif // AMBIANT_LIGHT_HPP
+#endif

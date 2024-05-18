@@ -8,13 +8,11 @@
 #ifndef RTWEEKEND_HPP_
 #define RTWEEKEND_HPP_
 
-#include <cmath>
-#include <iostream>
-#include <limits>
-#include <memory>
 #include "../materials/flat_color/Flat_Color.hpp"
 #include "Ray.hpp"
 #include "Vector3D.hpp"
+#include "../../include/Macros.hpp"
+
 
 using std::make_shared;
 using std::shared_ptr;

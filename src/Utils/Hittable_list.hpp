@@ -9,8 +9,7 @@
 #define HITTABLE_LIST_HPP_
 
 #include "Hittable.hpp"
-#include <memory>
-#include <vector>
+#include "../../include/Macros.hpp"
 
 class HittableList : public Hittable {
 public:

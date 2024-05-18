@@ -5,10 +5,10 @@
 ** Renderer
 */
 
-#ifndef RENDERER_HPP
-#define RENDERER_HPP
+#ifndef RENDERER_HPP_
+#define RENDERER_HPP_
 
-#include <vector>
+#include "../../include/Macros.hpp"
 #include "../primitives/sphere/Sphere.hpp"
 #include "../primitives/plane/Plane.hpp"
 #include "../transformation/translation/Translation.hpp"
@@ -29,4 +29,4 @@ public:
 
 };
 
-#endif // RENDERER_HPP
+#endif

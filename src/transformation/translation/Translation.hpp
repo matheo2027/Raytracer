@@ -5,8 +5,8 @@
 ** Translation
 */
 
-#ifndef TRANSLATION_HPP
-#define TRANSLATION_HPP
+#ifndef TRANSLATION_HPP_
+#define TRANSLATION_HPP_
 
 class Translation {
 private:
@@ -21,4 +21,4 @@ public:
     void setTranslation(float translation[3]); // Setter for translation
 };
 
-#endif // TRANSLATION_HPP
+#endif

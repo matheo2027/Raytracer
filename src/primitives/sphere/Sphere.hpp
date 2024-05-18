@@ -5,8 +5,8 @@
 ** Sphere
 */
 
-#ifndef SPHERE_HPP
-#define SPHERE_HPP
+#ifndef SPHERE_HPP_
+#define SPHERE_HPP_
 
 #include "../../materials/flat_color/Flat_Color.hpp"
 #include "../../Utils/Hittable.hpp"
@@ -23,4 +23,4 @@ private:
     double radius;
 };
 
-#endif // SPHERE_HPP
+#endif

@@ -5,8 +5,8 @@
 ** Plane
 */
 
-#ifndef PLANE_HPP
-#define PLANE_HPP
+#ifndef PLANE_HPP_
+#define PLANE_HPP_
 
 #include "../../materials/flat_color/Flat_Color.hpp"
 
@@ -28,4 +28,4 @@ public:
     void setColor(const Flat_Color& color); // Setter for color
 };
 
-#endif // PLANE_HPP
+#endif

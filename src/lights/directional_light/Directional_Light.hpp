@@ -5,8 +5,8 @@
 ** Directional_Light
 */
 
-#ifndef DIRECTIONAL_LIGHT_HPP
-#define DIRECTIONAL_LIGHT_HPP
+#ifndef DIRECTIONAL_LIGHT_HPP_
+#define DIRECTIONAL_LIGHT_HPP_
 
 class Directional_Light {
 private:
@@ -23,4 +23,4 @@ public:
     void setDirection(float direction[3]); // Setter for direction x,y and z
 };
 
-#endif // DIRECTIONAL_LIGHT_HPP
+#endif

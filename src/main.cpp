@@ -11,7 +11,7 @@
 #include "Utils/Hittable.hpp"
 #include "Utils/Hittable_list.hpp"
 #include "primitives/sphere/Sphere.hpp"
-#include <iostream>
+#include "../include/Macros.hpp"
 
 Flat_Color ray_color(const Ray& r, const Hittable& world) {
     HitRecord rec;
@@ -24,7 +24,7 @@ Flat_Color ray_color(const Ray& r, const Hittable& world) {
     return (1.0 - a) * Flat_Color(1.0, 1.0, 1.0) + a * Flat_Color(0.5, 0.7, 1.0);
 }
 
-int main() {
+/*int marin() {
     auto aspect_ratio = 16.0 / 9.0;
     int image_width = 400;
     int image_height = static_cast<int>(image_width / aspect_ratio);
@@ -63,4 +63,23 @@ int main() {
 
     std::clog << "\rDone.                 \n";
     return 0;
+}*/
+
+void help(void)
+{
+  std::cout << "USAGE :" << std::endl;
+  std::cout << "\t./raytracer <SCENE_FILE>" << std::endl;
+  std::cout << "SCENE_FILE :" << std::endl;
+  std::cout << "\t scene configuration" << std::endl;
+}
+
+int main(int argc, char **argv)
+{
+    if (argc != 2 || strcmp(argv[1], "--help") == 0) {
+        if (argc != 2 || strcmp(argv[1], "--help") == 0) {
+            help();
+            return KO;
+        }
+        return OK;
+    }
 }
