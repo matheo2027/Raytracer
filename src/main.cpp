@@ -48,11 +48,11 @@ int parsing_file(char *file) {
         - Vector3D(0, 0, focal_length) - viewport_u / 2 - viewport_v / 2;
     auto pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
 
-    std::ofstream out_file("output.ppm");  // Ouverture du fichier de sortie
+    std::ofstream out_file("output.ppm");
 
     if (!out_file) {
         std::cerr << "Could not open the file for writing: output.ppm" << std::endl;
-        return -1;  // Code d'erreur pour l'échec de l'ouverture du fichier
+        return KO;
     }
 
     out_file << "P3\n" << image_width << ' ' << image_height << "\n255\n";
