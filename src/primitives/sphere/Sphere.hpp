@@ -11,16 +11,19 @@
 #include "../../materials/flat_color/Flat_Color.hpp"
 #include "../../Utils/Hittable.hpp"
 
-class Sphere : public Hittable {
+class Sphere {
 public:
-    Sphere() {}
-    Sphere(const Point3D& cen, double r) : center(cen), radius(r) {}
+    Sphere();
+    Sphere(const Point3D& cen, double r, const Flat_Color& color);
 
-    bool hit(const Ray& r, double t_min, double t_max, HitRecord& rec) const override;
+    const Point3D& getCenter() const;
+    double getRadius() const;
+    const Flat_Color& getColor() const;
 
 private:
     Point3D center;
     double radius;
+    Flat_Color color;
 };
 
 #endif

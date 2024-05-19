@@ -16,7 +16,7 @@ Translation::Translation() {
 }
 
 // Constructor with parameters
-Translation::Translation(float translation[3]) {
+Translation::Translation(const float translation[3]) {
     // Set translation vector
     for (int i = 0; i < 3; ++i) {
         this->translation[i] = translation[i];
@@ -32,7 +32,7 @@ const float* Translation::getTranslation() const {
 }
 
 // Setter for translation
-void Translation::setTranslation(float translation[3]) {
+void Translation::setTranslation(const float translation[3]) {
     // Set translation vector
     for (int i = 0; i < 3; ++i) {
         this->translation[i] = translation[i];

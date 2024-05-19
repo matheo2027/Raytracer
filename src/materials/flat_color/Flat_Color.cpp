@@ -7,6 +7,7 @@
 
 #include "Flat_Color.hpp"
 
+// Function to print the color
 void Flat_color(std::ostream& out, const Flat_Color& pixel_color) {
     auto r = pixel_color.x();
     auto g = pixel_color.y();

@@ -9,16 +9,15 @@
 #define AMBIANT_LIGHT_HPP_
 
 class Ambient_Light {
-private:
-    float intensity; // Intensity of the ambient light
-
 public:
-    Ambient_Light(float intensity); // Constructor
-    ~Ambient_Light(); // Destructor
+    Ambient_Light(float intensity);
+    ~Ambient_Light();
 
-    float getIntensity() const; // Getter for intensity
+    float getIntensity() const;
+    void setIntensity(float intensity);
 
-    void setIntensity(float intensity); // Setter for intensity
+private:
+    float intensity;
 };
 
 #endif

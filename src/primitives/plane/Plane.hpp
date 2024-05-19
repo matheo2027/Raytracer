@@ -11,21 +11,22 @@
 #include "../../materials/flat_color/Flat_Color.hpp"
 
 class Plane {
-private:
-    float position; // Position of the plane along its axis
-    char axis; // Axis along which the plane is positioned ('X', 'Y', or 'Z')
-    Flat_Color color; // Color of the plane
-
 public:
-    Plane(float position, char axis, const Flat_Color& color); // Constructor
-    ~Plane(); // Destructor
+    Plane(float position, char axis, const Flat_Color& color);
+    ~Plane();
 
-    float getPosition() const; // Getter for position
-    char getAxis() const; // Getter for axis
-    const Flat_Color& getColor() const; // Getter for color
-    void setPosition(float position); // Setter for position
-    void setAxis(char axis); // Setter for axis
-    void setColor(const Flat_Color& color); // Setter for color
+    float getPosition() const;
+    char getAxis() const;
+    const Flat_Color& getColor() const;
+
+    void setPosition(float position);
+    void setAxis(char axis);
+    void setColor(const Flat_Color& color);
+
+private:
+    float position;
+    char axis;
+    Flat_Color color;
 };
 
 #endif

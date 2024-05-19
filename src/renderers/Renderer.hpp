@@ -14,19 +14,21 @@
 #include "../transformation/translation/Translation.hpp"
 
 class Renderer {
-private:
-    std::vector<Sphere> spheres; // List of spheres in the scene
-    std::vector<Plane> planes; // List of planes in the scene
-    Translation translation; // Translation object for scene transformation
-
 public:
-    Renderer(); // Constructor
-    ~Renderer(); // Destructor
+    Renderer();
+    ~Renderer();
 
-    void addSphere(const Sphere& sphere); // Method to add a sphere to the scene
-    void addPlane(const Plane& plane); // Method to add a plane to the scene
-    void setTranslation(const Translation& translation); // Method to set translation for the scene
+    void addSphere(const Sphere& sphere);
+    void addPlane(const Plane& plane);
+    void setTranslation(const Translation& translation);
 
+    const std::vector<Sphere>& getSpheres() const;
+    const std::vector<Plane>& getPlanes() const;
+
+private:
+    std::vector<Sphere> spheres;
+    std::vector<Plane> planes;
+    Translation translation;
 };
 
 #endif

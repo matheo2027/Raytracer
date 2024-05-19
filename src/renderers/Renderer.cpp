@@ -7,23 +7,26 @@
 
 #include "Renderer.hpp"
 
-// Constructor
 Renderer::Renderer() {}
 
-// Destructor
 Renderer::~Renderer() {}
 
-// Method to add a sphere to the scene
 void Renderer::addSphere(const Sphere& sphere) {
     spheres.push_back(sphere);
 }
 
-// Method to add a plane to the scene
 void Renderer::addPlane(const Plane& plane) {
     planes.push_back(plane);
 }
 
-// Method to set translation for the scene
 void Renderer::setTranslation(const Translation& translation) {
     this->translation = translation;
+}
+
+const std::vector<Sphere>& Renderer::getSpheres() const {
+    return spheres;
+}
+
+const std::vector<Plane>& Renderer::getPlanes() const {
+    return planes;
 }

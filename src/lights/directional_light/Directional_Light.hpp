@@ -9,18 +9,19 @@
 #define DIRECTIONAL_LIGHT_HPP_
 
 class Directional_Light {
-private:
-    float intensity; // Intensity of the directional light
-    float direction[3]; // Direction vector of the light
-
 public:
-    Directional_Light(float intensity, float direction[3]); // Constructor
-    ~Directional_Light(); // Destructor
+    Directional_Light(float intensity, const float direction[3]);
+    ~Directional_Light();
 
-    float getIntensity() const; // Getter for intensity
-    const float* getDirection() const; // Getter for direction
-    void setIntensity(float intensity); // Setter for intensity
-    void setDirection(float direction[3]); // Setter for direction x,y and z
+    float getIntensity() const;
+    const float* getDirection() const;
+    void setIntensity(float intensity);
+    void setDirection(const float direction[3]);
+
+private:
+    float intensity;
+    float direction[3];
 };
+
 
 #endif

@@ -5,20 +5,28 @@
 ** Translation
 */
 
-#ifndef TRANSLATION_HPP_
-#define TRANSLATION_HPP_
+#ifndef TRANSLATION_HPP
+#define TRANSLATION_HPP
 
 class Translation {
-private:
-    float translation[3]; // Translation vector (dx, dy, dz)
-
 public:
-    Translation(); // Default constructor
-    Translation(float translation[3]); // Constructor
-    ~Translation(); // Destructor
+    // Default constructor
+    Translation();
 
-    const float* getTranslation() const; // Getter for translation
-    void setTranslation(float translation[3]); // Setter for translation
+    // Constructor with parameters
+    Translation(const float translation[3]);
+
+    // Destructor
+    ~Translation();
+
+    // Getter for translation
+    const float* getTranslation() const;
+
+    // Setter for translation
+    void setTranslation(const float translation[3]);
+
+private:
+    float translation[3];
 };
 
-#endif
+#endif // TRANSLATION_HPP

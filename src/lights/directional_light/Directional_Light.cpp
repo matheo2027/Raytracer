@@ -7,34 +7,27 @@
 
 #include "Directional_Light.hpp"
 
-// Constructor
-Directional_Light::Directional_Light(float intensity, float direction[3]) : intensity(intensity) {
-    for (int i = 0; i < 3; ++i) {
-        this->direction[i] = direction[i];
-    }
+Directional_Light::Directional_Light(float intensity, const float direction[3]) : intensity(intensity) {
+    setDirection(direction);
 }
 
-// Destructor
 Directional_Light::~Directional_Light() {}
 
-// Getter for intensity
 float Directional_Light::getIntensity() const {
     return intensity;
 }
 
-// Getter for direction
 const float* Directional_Light::getDirection() const {
     return direction;
 }
 
-// Setter for intensity
 void Directional_Light::setIntensity(float intensity) {
     this->intensity = intensity;
 }
 
-// Setter for direction
-void Directional_Light::setDirection(float direction[3]) {
+void Directional_Light::setDirection(const float direction[3]) {
     for (int i = 0; i < 3; ++i) {
         this->direction[i] = direction[i];
     }
 }
+
